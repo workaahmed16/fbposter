@@ -29,12 +29,12 @@ public class main {
 	    driver.manage().window().maximize();
 		System.setProperty("chromedriver.exe", "");
 	    driver.get("https://www.facebook.com/");
-	    driver.findElement(By.id("email")).sendKeys("stumpy229@gmail.com");
-	    driver.findElement(By.id("pass")).sendKeys("cimbom29");
+	    driver.findElement(By.id("email")).sendKeys("Your User Name");
+	    driver.findElement(By.id("pass")).sendKeys("Your Password");
 	    driver.findElement(By.id("u_0_o")).submit();
 	    
 	    // Search User and post on walls
-	    driver.get("https://www.facebook.com/sean.morneau?fref=ts");
+	    driver.get("Link to friend's wall");
 	    driver.findElement(By.name("xhpc_message_text")).sendKeys("Hello World!");
 	    WebDriverWait wait = new WebDriverWait(driver, 10);
 	    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"js_j\"]/div[3]/div[2]/div/div[2]/div/button"))).click();
